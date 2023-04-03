@@ -1,10 +1,12 @@
 
 # Coding Note
 โน้ตนี้สร้างขึ้นเพื่อบันทึกโค้ดส่วนต่าง ๆ ที่เป็นความรู้ใหม่ ๆ ซึ่งเป็น jsx, react, tailwind, mui เพื่อกลับมาอ่านซ้ำได้อีกครั้งโดยมีหัวข้อดังนี้
+
 ## สารบัญ
  - [Eye visible for password](#eye-visible-for-password)
  - [Background color gradient](#background-color-gradient)
  - [Responsive Navbar](#responsive-navbar)
+
 ## Eye visible for password
 in PasswordInput.jsx file
 ```javascript
@@ -82,8 +84,21 @@ function  togglePasswordVisibility(event) {
 	);
 }
 ```
+##### Description : ใช้ useState ในการเก็บค่า bool เมื่อคลิกจะเช็ค useState และเป็น svg เป็น Eye invisible (Toggle clicks)
+
 ## Background color gradient
-- [ ] #739 
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
+in  Navcomponent.jsx file
+```javascript
+1	function  NavComponent({role, }) {
+2		return (
+3			<nav  
+4				className=" fixed right-0 left-0 top-0 px-2 sm:pr-4 py-1
+5				bg-gradient-to-r from-indigo-400 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
+6			>
+7			</nav>
+8		)
+9	};
+```
+##### Description : ในบรรทัดที่  5 จะเป็นการเกลี่ยนสีพื้นหลังโดยใช้ tailwind
+
 ## Responsive Navbar
